@@ -15,7 +15,7 @@ def request_token
 
     # the `oauth_consumer` method is defined above
     session[:request_token] = oauth_consumer.get_request_token(
-      :oauth_callback => "http://#{host_and_port}/auth"
+      :oauth_callback => "http://afternoon-castle-1609.herokuapp.com/auth"
     )
   end
   session[:request_token]
